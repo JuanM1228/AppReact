@@ -15,6 +15,10 @@ const theme = {
     fontWeights: {
         normal: '400',
         bold: '700'
+    },
+    AppBar: {
+        primary: '#24292E',
+        textPrimary: '#FFF'
     }
 }
 
