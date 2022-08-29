@@ -1,8 +1,10 @@
 import React from "react";
+import { Routes, Route, Redirect} from "react-router-native";
 import { Text, View } from "react-native";
 import RepositoryList from "./RepositoryList";
 import AppBar from "./appBar";
-import { Routes, Route} from "react-router-native";
+import Login from "../pages/Login";
+
 
 
 export default function Main(){
@@ -11,7 +13,7 @@ export default function Main(){
             <AppBar />
             <Routes>
             <Route path="/" exact element = {<RepositoryList />} />
-            <Route path="/signin" exact element = {<Text>Working on it</Text>} />
+            <Route path="/signin" exact element = {<Login />} />
             </Routes>
         </View>
     );
